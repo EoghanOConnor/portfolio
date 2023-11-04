@@ -42,10 +42,14 @@
         <a href="images/image_1.png" class="image fit"><img src="images/image_1.png" alt="" /></a>
         <div class="inner">
             <h3>Monocular Distance Estimator</h3>
-            <p>This project uses a Convolutional Neural Network (CNN) to predict distances of pedestrians from the onboard camera.
-                The object is detected using the YOLOv5n model.</p>
-            <p>This is my dissertation for master's in Artificial Intelligence so far, I'm currently working on this.
-                Using deep learning algorithms such as Yolo Model and CNN</p>
+            <p>This project uses both Monocular visions using a CNN regressor 
+		    and Stereo Vision to detect the distance between pedestrians and an onboard camera.</p>
+            <p>The pedestrians are detected using a YOLO5n model. 
+		    The monocular vision provides a highly accurate regressor, with an error of less than 1meter. 
+		    The Stereo vision provides an estimation of less than .5meter. 
+	    </p>
+		
+	<p>Below, the watch demo shows the CNN regressor predicting multiple pedestrians in real time </p>
             <br>
             <br>
 	    <a href="images/video_distances.mp4" class="button fit" data-poptrox="youtube,800x400">Watch Demo</a>
@@ -57,11 +61,11 @@
     <div class="box">
         <a href="images/bci_headset.png" class="image fit"><img src="images/bci_headset.png" alt="" /></a>
         <div class="inner">
-            <h3>Machine learning applied to wireless EEG signals</h3>
-            <p>The user can control the GUI application using their brain signals. 
-                They do this by thinking left,right and leave the mind blank to stop the box from moving.</p>
-            <p>This is my thesis for my bachealor degree in Electronic and Computer engineering.
-                This deep learning project using a CNN</p>
+            <h3>Machine learning applied to EEG signals</h3>
+            <p>This project uses a CNN model to try classify when a user’s thinking left and right. 100 billion neurons fire in the brain per second, causing high volume of noise.
+		    Identifying different brain signals is difficult due to this. </p>
+            <p>The below video shows the user thinking, First right (0:00-0:07), then left (0:07-0:14), then right (0:14-0:20).
+		    The noise interference is noticeable due to overall brain activity.</p>
             <br>
             <br>
 	    <br>
@@ -75,10 +79,10 @@
         <a href="images/image_0.png" class="image fit"><img src="images/image_0.png" alt="" /></a>
         <div class="inner">
             <h3>Object discovery using DDT method</h3>
-            <p>Using the Deep Descriptor Transforming (DDT) Technique to perform object co-localisation described in the following paper (https://arxiv.org/pdf/1707.06397.pdf).
-                The object localisation task involves finding the location of the primary object in an image (same object as image classification result).
-                In the object co-localisation task the goal is to find the objects in images all of the same class.</p>
-            <p>This objection detection project uses VGG model</p>
+            <p>A Deep Descriptor Transforming (DDT) method is used to identify and locate the outline of objects in an image </p>
+             <p>   This is done with unlabelled dataset rather than a labelled, 
+		     which learns to identify primary objects in an image. This avoids the need for labelled data or for training a model.</p>
+            <p>This is an advanced Machine learning technique, the published paper can be found here: https://arxiv.org/pdf/1707.06397.pdf </p>
             <br>
 	    <br>
 	    <br>
