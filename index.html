@@ -34,11 +34,55 @@
 				<div id="main">
 					<div class="inner">
 
+
+
+<style>
+    .box .button {
+        display: inline-block;
+        margin-right: 10px; /* Adjust the right margin as needed */
+        margin-bottom: 10px; /* Adjust the bottom margin as needed */
+    }
+
+    .box .button:last-child {
+        margin-right: 0; /* Remove right margin for the last button in each box */
+    }
+</style>
+
 <!-- Boxes -->
 <div class="thumbnails">
-
     <!-- Monocular Vision -->
     <div class="box">
+                    <h3>Monocular Distance Estimator</h3>
+            <p>This project uses both Monocular visions using a CNN regressor 
+		    and Stereo Vision to detect the distance between pedestrians and an onboard camera.</p>
+            <p>The pedestrians are detected using a YOLO5n model. 
+		    The monocular vision provides a highly accurate regressor, with an error of less than 1meter. 
+		    The Stereo vision provides an estimation of less than .5meter. 
+	    </p>
+		
+	<p>Below, the watch demo shows the CNN regressor predicting multiple pedestrians in real time </p>
+        <a href="images/video_distances.mp4" class="button fit" data-poptrox="youtube,800x400">Watch Demo</a>
+        <a href="https://github.com/EoghanOConnor/deep_learning_distance_estimator" target="_blank" class="button style3 fit" data-poptrox="youtube,800x400">View Repository</a>
+    </div>
+
+    <!-- BCI -->
+    <div class="box">
+                    <h3>Machine learning applied to EEG signals</h3>
+            <p>This project uses a CNN model to try classify when a user’s thinking left and right. 100 billion neurons fire in the brain per second, causing high volume of noise.
+		    Identifying different brain signals is difficult due to this. </p>
+            <p>The below video shows the user thinking, First right (0:00-0:07), then left (0:07-0:14), then right (0:14-0:20).
+		    The noise interference is noticeable due to overall brain activity.</p>
+        <a href="images/bci_video.mp4" class="button fit" data-poptrox="youtube,800x400">Watch Demo</a>
+        <a href="https://github.com/EoghanOConnor/ML_OpenBCI" target="_blank" class="button style3 fit" data-poptrox="youtube,800x400">View Repository</a>
+    </div>
+</div>
+
+
+<!-- <!-- Boxes -->
+<!-- <div class="thumbnails"> -->
+
+    <!-- Monocular Vision -->
+<!--     <div class="box">
         <a href="images/image_1.png" class="image fit"><img src="images/image_1.png" alt="" /></a>
         <div class="inner">
             <h3>Monocular Distance Estimator</h3>
@@ -58,7 +102,7 @@
     </div>
 
     <!-- BCI -->
-    <div class="box">
+<!--     <div class="box">
         <a href="images/bci_headset.png" class="image fit"><img src="images/bci_headset.png" alt="" /></a>
         <div class="inner">
             <h3>Machine learning applied to EEG signals</h3>
@@ -72,8 +116,7 @@
 	    <a href="images/bci_video.mp4" class="button fit" data-poptrox="youtube,800x400">Watch Demo</a>
             <a href="https://github.com/EoghanOConnor/ML_OpenBCI" target="_blank" class="button style3 fit" data-poptrox="youtube,800x400">View Repository</a>
         </div>
-    </div>
-
+    </div> -->
     <!-- DDT -->
     <div class="box">
         <a href="images/image_0.png" class="image fit"><img src="images/image_0.png" alt="" /></a>
