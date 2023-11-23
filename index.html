@@ -16,8 +16,8 @@
 						<header>
 							<h1>Eoghan O'Connor</h1>
 							<p> Email: eoghanfoconnor@gmail.com </p>
-							<p>I'm a Computer Vision Engineer with with first-class honours in both MSc. in Artificial Intelligence and B.Eng. in Electronic & Computer Engineering.
-								I've expertise in developing Artificial Intelligence applications including Computer vision, Reinforcement learning, and machine learning.
+							<p>I'm a Data Scientist with with first-class honours in both MSc. in Artificial Intelligence and B.Eng. in Electronic & Computer Engineering.
+								I've expertise in developing data-science solutions and Artificial Intelligence applications including Predictive Analytics Systems, time series analysis, (un)supervised learning, Reinforcement learning, NLP and machine learning.
 								</p>
 								
 							<p>The following snippets describe some of my projects </p>
@@ -38,16 +38,16 @@
 <!-- Boxes -->
 <div class="thumbnails">
 
-    <!-- Monocular Vision -->
+    <!-- Cyrpoto outliers -->
     <div class="box">
         <a href="images/image_1.png" class="image fit"><img src="images/image_1.png" alt="" /></a>
         <div class="inner">
-            <h3>Monocular Distance Estimator</h3>
-            <p>This project uses both Monocular visions using a CNN regressor 
-		    and Stereo Vision to detect the distance between pedestrians and an onboard camera.</p>
-            <p>The pedestrians are detected using a YOLO5n model. 
-		    The monocular vision provides a highly accurate regressor, with an error of less than 1meter. 
-		    The Stereo vision provides an estimation of less than .5meter. 
+            <h3>Crypto outlier detector on AWS</h3>
+            <p>This project detects outlier values for Solona cryptocurrency.
+		    This uses API from CryptoCompare.com to update values daily  </p>
+            <p>The values are updated in s3 bucket
+		    Unsupervised learning models are used on the updated data in bucket 
+		    to identify outlier values in the Solona rates. 
 	    </p>
 		
             <br>
@@ -59,15 +59,13 @@
         </div>
     </div>
 
-    <!-- BCI -->
+    <!-- Autoencoders for Anomaly Detection -->
     <div class="box">
         <a href="images/bci_headset.png" class="image fit"><img src="images/bci_headset.png" alt="" /></a>
         <div class="inner">
-            <h3>Machine learning applied to EEG signals</h3>
-            <p>This project uses a CNN model to try classify when a user’s thinking left and right. 100 billion neurons fire in the brain per second, causing high volume of noise.
-		    Identifying different brain signals is difficult due to this. </p>
-            <p>The below video shows the user thinking, First right (0:00-0:07), then left (0:07-0:14), then right (0:14-0:20).
-		    The noise interference is noticeable due to overall brain activity.</p>
+            <h3>Autoencoders for Anomaly Detection</h3>
+            <p> Autoencoders and VAE are ideal for data compression and feature learning. </p>
+            <p>Using a unlabelled dataset the AutoEncoders detect the anamolies in the dataset with high accuracy</p>
             <p>  
 	    </p>
             <br>
@@ -82,11 +80,11 @@
     <div class="box">
         <a href="images/image_0.png" class="image fit"><img src="images/image_0.png" alt="" /></a>
         <div class="inner">
-            <h3>Object discovery using DDT method</h3>
-            <p>A Deep Descriptor Transforming (DDT) method is used to identify and locate the outline of objects in an image </p>
-             <p>   This is done with unlabelled dataset rather than a labelled, 
-		     which learns to identify primary objects in an image. This avoids the need for labelled data or for training a model.</p>
-            <p>This is an advanced Machine learning technique, the published paper can be found here: https://arxiv.org/pdf/1707.06397.pdf </p>
+            <h3>Stock Prediction and Sentimental Analysis </h3>
+            <p>A companies stock value are predicted using an RNN and historical data of previous stock values.
+                    </p>
+             <p>   The markets historical data on the companies commodities is used to train an RNN for companies
+                    stock value prediction. </p>
 	 	<p>
 			
 		</p>
@@ -98,19 +96,19 @@
         </div>
     </div>
 
-							<!-- Facial Verification -->
+							<!-- Stock Prediction -->
 							<div class="box">
 								<a href="images/image_2.png" class="image fit"><img src="images/image_2.png" alt="" /></a>
 								<div class="inner">
-									<h3>Facial Verification</h3>
+									<h3>Stock Prediction and Sentimental Analysis</h3>
 									<p>
-										Two separate images are passed into each Subnetwork CNN shown above. The networks are identical as they share the same weights.
-										The Euclidean distance between the outputted is used to calculate the similarity between the two images.
-										If the images pass a certain threshold the images are classified as a pair.
+										A companies stock value are predicted using an RNN and historical data of previous stock values.
+                    The markets historical data on the companies commodities is used to train an RNN for companies
+                    stock value prediction.
 									</p>
 
 									<p>
-										This is an advanced facial recognition technique, published paper can be found here:  http://www.jips-k.org/q.jips?cp=pp&pn=621
+										watch video:  http://www.jips-k.org/q.jips?cp=pp&pn=621
 									</p>
 									<p>  
 									
@@ -124,15 +122,14 @@
 								</div>
 							</div>
 
-							<!-- ResNet DenseNet -->
+							<!-- Potential Subscription Analysis -->
 							<div class="box">
 								<a href="images/image_3.png" class="image fit"><img src="images/image_3.png" alt="" /></a>
 								<div class="inner">
-									<h3>ResNet and DenseNet Object Classifier</h3>
-									<p> This project uses ResNet and DenseNet for image classification on blurry images.
-										ResNet is a neural network architecture that uses skip connections to allow gradients to flow more easily during training,
-										enabling deeper networks to be trained. DenseNet is a neural network architecture that connects all layers directly to each other,
-										resulting in dense connections that allow information to flow more easily between layers.
+									<h3>Potential Subscription Analysis</h3>
+									<p> This project uses dataset of banks free newsletter subscription list to identity potential product subscribers.
+                       This involves heavy data processing, cleaning, and feature engineering, to identify high probability customers,
+                       and increasing success rate among sales teams.
 									 </p>
 									<p>  </p>
 									<br>
