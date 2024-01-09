@@ -139,31 +139,29 @@
 								</div>
 							</div>
 
-							<!-- DQNs -->
+							<!-- Facial Verification -->
 							<div class="box">
-								<a href="images/potential_sub.png" class="image fit"><img src="images/image_4.png" alt="" /></a>
+								<a href="images/image_2.png" class="image fit"><img src="images/image_2.png" alt="" /></a>
 								<div class="inner">
-									<h3>Duelling DQN </h3>
+									<h3>Facial Verification</h3>
 									<p>
-										This project uses a Duelling DQN to train an agent to play An Atari video game. The agent takes actions based on the current state. 
-										The game returns a reward (score) to the agent indicating good or bad actions. This develops a Q-value for the agent's actions. 
-										The agent develops an exploration vs exploitation policy in tandem with the Q values for previous actions by utilizing experience replay and target networks. 
-										
-										</p>
-
-										<p>
-										 This is a deep learning reinforcement model. 
-
+										Two separate images are passed into each Subnetwork CNN shown above. The networks are identical as they share the same weights.
+										The Euclidean distance between the outputted is used to calculate the similarity between the two images.
+										If the images pass a certain threshold the images are classified as a pair.
 									</p>
 									<p>
+										This is an advanced facial recognition technique, published paper can be found here:  http://www.jips-k.org/q.jips?cp=pp&pn=621
+									</p>
+									<p>  
 									
 									</p>
 									<br>
 									<br>
 									<br>
-									    <br>
-									    <br>
-									<a href="https://github.com/EoghanOConnor/rl_duelling_dqn_atari" target="_blank" class="button style3 fit" data-poptrox="youtube,800x400">View Repository</a>
+									<br>
+									<br>
+									<br>
+									<a href="https://github.com/EoghanOConnor/facial_verification" target="_blank" class="button style3 fit" data-poptrox="youtube,800x400">View Repository</a>
 								</div>
 							</div>
 
